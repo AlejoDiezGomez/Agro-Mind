@@ -1,4 +1,4 @@
-# Agro Mind
+# Agro Mind.
 
 ## Introducción
 
