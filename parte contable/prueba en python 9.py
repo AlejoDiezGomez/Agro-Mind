@@ -17,20 +17,24 @@ def obtener_ruta_csv():
 LIBRO_CUENTAS_FILE = 'libro_cuentas.csv'
 
 def generar_id():
-    """Genera un ID único basado en la fecha y un número secuencial."""
-    fecha_actual = datetime.now().strftime('%Y-%m-%d')
+    """Genera un ID único basado en el número total de transacciones."""
     ruta_archivo = obtener_ruta_csv()
-    
+
     # Crear el archivo si no existe
     if not os.path.exists(ruta_archivo):
         pd.DataFrame(columns=['id', 'Fecha', 'Cuenta', 'Débito', 'Crédito', 'Descripción']).to_csv(ruta_archivo, index=False)
     
     df = pd.read_csv(ruta_archivo)
     if not df.empty:
-        max_id = df['id'].max()
-        nuevo_id = max_id + 1
+        # Convertir 'id' a cadena para manejar cualquier formato, y separar el ID secuencial
+        df['id_num'] = df['id'].str.split('_').str[1].astype(int)  # Obtener solo la parte numérica del ID
+        max_id = df['id_num'].max()
+        nuevo_id = int(max_id) + 1  # Incrementar el ID
     else:
-        nuevo_id = 1
+        nuevo_id = 1  # Comenzar desde 1 si no hay transacciones
+
+    # Combinar la fecha actual con el ID secuencial
+    fecha_actual = datetime.now().strftime('%Y-%m-%d')
     return f"{fecha_actual}_{nuevo_id}"
 
 def convertir_a_numero(valor):
@@ -81,9 +85,10 @@ def agregar_transaccion(cuenta, debito, credito, descripcion):
 
 def eliminar_transaccion(id):
     global libro_diario
+    # Filtrar el libro diario para eliminar la transacción con el ID dado
     libro_diario = libro_diario[libro_diario['id'] != id]
     actualizar_balance_mayor()
-    guardar_en_csv(libro_diario)
+    guardar_en_csv(libro_diario)  # Guardar los cambios en el archivo CSV
 
 def agregar_cuenta(cuenta, descripcion):
     global libro_cuentas

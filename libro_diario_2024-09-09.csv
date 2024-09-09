@@ -1,0 +1,10 @@
+id,Fecha,Cuenta,Débito,Crédito,Descripción
+2024-09-09_1,2024-09-09,Banco macro cc,5000.0,0.0,vents
+2024-09-09_1,2024-09-09,Banco macro cc,0.0,5000.0,retiro
+2024-09-09_1,2024-09-09,Banco macro cc,5000.0,0.0,vta
+2024-09-09_1,2024-09-09,Banco macro cc,0.0,5000.0,vta
+2024-09-09_1,2024-09-09,Banco macro cc,5000.0,0.0,vtas
+2024-09-09_1,2024-09-09,Selecciona una cuenta,5000.0,0.0,vta
+2024-09-09_1,2024-09-09,Banco macro cc,5000.0,0.0,vta
+2024-09-09_2,2024-09-09,Banco macro cc,5000.0,0.0,vta
+2024-09-09_3,2024-09-09,Banco macro cc,6000.0,0.0,vta
