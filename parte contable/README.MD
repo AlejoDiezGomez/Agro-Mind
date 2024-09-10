@@ -13,8 +13,10 @@ Libro diario: Menú desplegable para seleccionar cuentas registradas previamente
 Agregue columna ID 
 Posibilidad de eliminar cuentas en base a su ID 
 
-## Solucionar
-Solucionar tipo de datos que generan conflictos a la hora de mayorisar (hay algún dato srt mal colocado que genera conflicto ) >:!
+### Documentacion 09/09/2024 (version 9.1)
+Se solucionaron los problemas de la version anterior (Documentacion del 04/09/24)
+Establecimiento de la interfaz visual 
+
 
 
 
