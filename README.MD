@@ -3,8 +3,10 @@
 ## Introducción
 
 **Agro Mind** es un proyecto personal que busca, a través de la tecnología, facilitar la vida de los productores agropecuarios. El objetivo es ayudar en la administración, control y análisis de diversas actividades relacionadas con la producción, la gestión administrativa, el personal, y otras tareas inherentes al ser un productor agropecuario.
-## Estado actual del proyecto 
-[Ver progreso detallado ](Documentacion detallada\README.MD)
+## Estado actual del proyecto.
+
+[Ver progreso detallado](Documentacion detallada\README.MD)
+
 ## Ideas/Problemas a Solucionar
 
 ### 1. Administración Contable
