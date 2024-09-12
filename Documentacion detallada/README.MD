@@ -44,7 +44,7 @@ A continuación se presenta una lista de las tecnologías y bibliotecas utilizad
 
 ## Base de Datos (desarrollo actual):
 En esta parte, se está desarrollando una base de datos en SQL para almacenar los datos provenientes de los archivos CSV. También se definirá el ciclo de vida de los datos y su tratamiento.
-
+## Proceso de ETL para uno de los dataframe 
 ### Ciclo Tentativo:
 1. **Creación de los CSV** por la parte contable.
 2. **Verificación de los datos**: Ordenamiento, manejo de errores y modificaciones en Python.
